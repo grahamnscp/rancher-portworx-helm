@@ -140,7 +140,7 @@ monitoring:
   grafana: false                      # Enable grafana
 
 
-deployOnMaster:  false                # For POC only
+deployOnMaster: false                # For POC only
 
 csi: 
   enabled: true                      # Enable CSI
