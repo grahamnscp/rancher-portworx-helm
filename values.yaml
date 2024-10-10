@@ -106,7 +106,7 @@ licenseSecret:
 
 monitoring:
   prometheus:                         
-    enabled: true                     # Enable prometheus
+    enabled: false                    # Enable prometheus
     exportMetrics: false              # Expose the Portworx metrics to an external or operator deployed Prometheus.
     alertManager: false               # Enable prometheus alert manager
     resources:                        # Configure Prometheus resource usage such as memory and CPU usage
@@ -137,7 +137,7 @@ monitoring:
     securityContext:                  # Enable prometheus container run as a non-root user.
       runAsNonRoot: false
   telemetry: false                    # Enable telemetry
-  grafana: true                       # Enable grafana
+  grafana: false                      # Enable grafana
 
 
 deployOnMaster: true                 # For POC only
