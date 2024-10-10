@@ -15,9 +15,9 @@ AKSInstall: false                      # installation on AKS
 OKEInstall: false                      # installation on OKE
 etcdEndPoint:                         # The ETCD endpoint. Should be in the format etcd:http://<your-etcd-endpoint>:2379. If there are multiple etcd endpoints they need to be ";" seperated.
                                       # the default value is empty since it requires to be explicity set using either the --set option of -f values.yaml.
-clusterName: cluster1                 # This is the default. please change it to your cluster name.
+clusterName: pxcluster                # This is the default. please change it to your cluster name.
 usefileSystemDrive: false             # true/false Instructs PX to use an unmounted Drive even if it has a filesystem.
-usedrivesAndPartitions: false         # Defaults to false. Change to true and PX will use unmounted drives and partitions.
+usedrivesAndPartitions: true false        # Defaults to false. Change to true and PX will use unmounted drives and partitions.
 drives: "/dev/nvme1n1"                # NOTE: This is a ";" seperated list of drives. For eg: "/dev/sda;/dev/sdb;/dev/sdc" or
                                       # "type=gp2,size=200;type=gp3,size=500". Defaults to use -A switch.
 provider:                             # If we are using cloudstorage, it specifies the cloud provider name, such as: pure, azure, aws, gce, vsphere.
@@ -136,11 +136,11 @@ monitoring:
     #   name: additional-volume
     securityContext:                  # Enable prometheus container run as a non-root user.
       runAsNonRoot: false
-  telemetry: true                    # Enable telemetry
-  grafana: false                      # Enable grafana
+  telemetry: false                    # Enable telemetry
+  grafana: true                       # Enable grafana
 
 
-deployOnMaster:  false                # For POC only
+deployOnMaster: true                 # For POC only
 
 csi: 
   enabled: true                      # Enable CSI
