@@ -3,9 +3,9 @@ entries:
   portworx:
   - apiVersion: v1
     appVersion: 3.1.4
-    created: "2024-10-08T12:19:46.533244+01:00"
+    created: "2024-10-10T14:14:04.271133+01:00"
     description: A Helm chart for installing Portworx on Kubernetes.
-    digest: 244215f5018573f6f7553413862193c6c7d07e00da7bda4a2fff65f10d057621
+    digest: 4480214473423cc9cd52d4803da23b5ad99f3521373c4f67f5e7bbe2617bf3fd
     home: https://portworx.com/
     icon: https://raw.githubusercontent.com/portworx/helm/master/doc/media/k8s-porx.png
     keywords:
@@ -26,4 +26,4 @@ entries:
     urls:
     - portworx-4.0.0.tgz
     version: 4.0.0
-generated: "2024-10-08T12:19:46.527303+01:00"
+generated: "2024-10-10T14:14:04.266101+01:00"
